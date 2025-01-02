@@ -92,14 +92,14 @@ import pandas as pd
 import joblib
 
 # Load models and data
-regr = joblib.load('regr.pkl')
-clf = joblib.load('clf.pkl')
-feature_columns = joblib.load('feature_columns.pkl')
-scaler_dict = joblib.load('scaler_dict.pkl')
-catData = joblib.load('catData.pkl')
-label_encoding_dict = joblib.load('label_encoding_dict.pkl')
-numData = joblib.load('numData.pkl')
-unique_values = joblib.load('unique_values.pkl')
+regr = joblib.load('Code/regr.pkl')
+clf = joblib.load('Code/clf.pkl')
+feature_columns = joblib.load('Code/feature_columns.pkl')
+scaler_dict = joblib.load('Code/scaler_dict.pkl')
+catData = joblib.load('Code/catData.pkl')
+label_encoding_dict = joblib.load('Code/label_encoding_dict.pkl')
+numData = joblib.load('Code/numData.pkl')
+unique_values = joblib.load('Code/unique_values.pkl')
 
 # App Layout
 st.set_page_config(
@@ -116,7 +116,7 @@ This tool helps predict your stress levels and the likelihood of sleep disorders
 Please fill in the details on the sidebar, and let's get started!
 """)
 # use image from directory mindful.png
-st.image('mindful.png', use_container_width =True)
+st.image('Code/mindful.png', use_container_width =True)
 # Input Section with user-friendly placeholders and emojis
 st.sidebar.header("Input Your Details")
 
