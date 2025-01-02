@@ -1,8 +1,8 @@
-#Stress and Sleep Disorder Predictor
+# Stress and Sleep Disorder Predictor
 
 This project aims to predict stress and sleep disorders using machine learning models. The predictor analyzes various Lifestyle factors to determine the likelihood of stress and sleep disorders in individuals.
 
-![Process flow](documents\Process_flow.jpg)
+![Process flow](documents/Process_flow.jpg)
 
 ## How to Run
 # Bash the below
