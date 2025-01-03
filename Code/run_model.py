@@ -183,17 +183,17 @@ if valid_inputs:
             input_df[f] = scaler_dict[f].transform(input_df[[f]])
         stress_level = regr.predict(input_df)
         if stress_level < 4:
-            st.success(f'Predicted Stress Level: {stress_level[0]:.2f} 🌈 Excellent, keep it up!')
+            st.success(f'Predicted Stress Level: {stress_level[0]:.2f} 🌈 Excellent, You are Stress Free. Keep it up!')
         elif 4 <= stress_level < 5:
             st.info(f'Predicted Stress Level: {stress_level[0]:.2f} 🌟 Good, stay balanced!')
         elif 5 <= stress_level < 6:
             st.info(f'Predicted Stress Level: {stress_level[0]:.2f} ⭐ Absolutely Normal for working professionals.')
         elif 6 <= stress_level < 7:
-            st.warning(f'Predicted Stress Level: {stress_level[0]:.2f} ⚠ Need improvement in stress management.')
+            st.warning(f'Predicted Stress Level: {stress_level[0]:.2f} 🤔Are you bit Stressed? Please Take care of yourself.')
         elif 7 <= stress_level < 8:
-            st.error(f'Predicted Stress Level: {stress_level[0]:.2f} ⚠ Take care of mental health.')
+            st.warning(f'Predicted Stress Level: {stress_level[0]:.2f} 🤔Do you feel Stressed? Need improvement in stress management.')
         else:
-            st.error(f'Predicted Stress Level: {stress_level[0]:.2f} ⚠ Oh, It seems You have high stress, Please Take care of yourself and seek support.')
+            st.error(f'Predicted Stress Level: {stress_level[0]:.2f} 🤔Oh, It seems You have high stress, Please Take care of yourself and seek support.')
 
     # Sleep Disorder Prediction
     if st.button('Predict Sleep Disorder 🔮'):
@@ -209,11 +209,13 @@ if valid_inputs:
         if prediction == 'None':
             st.success(f'Predicted Sleep Disorder: None 🌈 Great! You seem to have no issues with sleep.')
         elif prediction == 'Sleep Apnea':
-            st.warning(f'Predicted Sleep Disorder: Sleep Apnea ⚠ Please consult a doctor.')
+            st.warning(f'Predicted Sleep Disorder: Sleep Apnea 👨‍⚕️ Please consult a doctor.')
         elif prediction == 'Insomnia':
-            st.warning(f'Predicted Sleep Disorder: Insomnia ⚠ Consider seeking professional help.')
+            st.warning(f'Predicted Sleep Disorder: Insomnia 👨‍⚕️ Consider seeking professional help.')
+        
 else:
     st.error("Please fill in all the input fields to proceed!")
 
 st.markdown("---")
-st.markdown("_Disclaimer: This is a predictive tool and not a substitute for professional medical advice. Please consult a healthcare provider for accurate diagnosis and treatment._")
+# bold text
+st.markdown("**_Disclaimer**: This is a **predictive tool** and **not** a substitute for professional medical advice. Please consult a healthcare provider for accurate diagnosis and treatment._")
