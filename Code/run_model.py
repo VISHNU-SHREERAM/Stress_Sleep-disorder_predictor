@@ -194,7 +194,7 @@ if valid_inputs:
             st.warning(f'Predicted Stress Level: {stress_level[0]:.2f} 🤔Do you feel Stressed? Need improvement in stress management.')
         else:
             st.error(f'Predicted Stress Level: {stress_level[0]:.2f} 🤔Oh, It seems You have high stress, Please Take care of yourself and seek support.')
-
+        st.error('**This is a prediction and not a substitute for medical advice.**')
     # Sleep Disorder Prediction
     if st.button('Predict Sleep Disorder 🔮'):
         for category in catData:
@@ -212,10 +212,14 @@ if valid_inputs:
             st.warning(f'Predicted Sleep Disorder: Sleep Apnea 👨‍⚕️ Please consult a doctor.')
         elif prediction == 'Insomnia':
             st.warning(f'Predicted Sleep Disorder: Insomnia 👨‍⚕️ Consider seeking professional help.')
-        
+        st.error('**This is a prediction and not a substitute for medical advice.**')
 else:
     st.error("Please fill in all the input fields to proceed!")
 
 st.markdown("---")
 # bold text
-st.markdown("**_Disclaimer**: This is a **predictive tool** and **not** a substitute for professional medical advice. Please consult a healthcare provider for accurate diagnosis and treatment._")
+# increase the font size of the text
+
+st.markdown('<p style="font-size: 24px;"> Disclaimer: This is a predictive tool and not a substitute for professional medical advice. Please consult a healthcare provider for accurate diagnosis and treatment.</p>', unsafe_allow_html=True)
+
+# st.markdown("_")
