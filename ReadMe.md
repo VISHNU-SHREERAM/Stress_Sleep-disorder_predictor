@@ -3,6 +3,8 @@
 This project aims to predict stress and sleep disorders using machine learning models. The predictor analyzes various Lifestyle factors to determine the likelihood of stress and sleep disorders in individuals.
 
 ![Process flow](documents/Process_flow.jpg)
+# Try it at
+https://stress-sleep-disorder-predictor.streamlit.app/
 
 ## How to Run
 # Bash the below
