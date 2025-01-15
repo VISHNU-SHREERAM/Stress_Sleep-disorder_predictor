@@ -7,6 +7,11 @@ This project aims to predict stress and sleep disorders using machine learning m
 https://stress-sleep-disorder-predictor.streamlit.app/
 
 ## How to Run
+# Install Dependencies
+    ```
+    pip install requirements.txt
+    ```
+
 # Bash the below
     ```
     cd Code
