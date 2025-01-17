@@ -9,7 +9,7 @@ https://stress-sleep-disorder-predictor.streamlit.app/
 ## How to Run
 # Install Dependencies
     ```
-    pip install requirements.txt
+    pip instal -r requirements.txt
     ```
 
 # Bash the below
